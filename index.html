@@ -3,145 +3,188 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Travel With Us</title>
+
+<title>Armoor ↔ Hyderabad Travel</title>
 
 <style>
 *{
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
-    font-family:Arial,sans-serif;
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+  font-family:Arial,sans-serif;
 }
 
 body{
-    background:#f5f7fb;
-    color:#172033;
+  background:#f4f7fb;
+  color:#172033;
 }
 
 header{
-    background:#111827;
-    color:white;
-    padding:22px 18px;
-    text-align:center;
+  background:#111827;
+  color:white;
+  text-align:center;
+  padding:24px 15px;
 }
 
 header h1{
-    font-size:28px;
+  font-size:27px;
 }
 
 header p{
-    margin-top:7px;
-    color:#cbd5e1;
+  margin-top:7px;
+  color:#cbd5e1;
 }
 
 .hero{
-    padding:35px 18px;
-    text-align:center;
-    background:linear-gradient(135deg,#2563eb,#4f46e5);
-    color:white;
+  background:linear-gradient(135deg,#2563eb,#4f46e5);
+  color:white;
+  text-align:center;
+  padding:38px 18px;
 }
 
 .hero h2{
-    font-size:30px;
-    margin-bottom:10px;
+  font-size:31px;
+  margin-bottom:9px;
 }
 
 .hero p{
-    font-size:16px;
+  font-size:17px;
 }
 
 .container{
-    max-width:600px;
-    margin:25px auto;
-    padding:0 16px;
+  max-width:650px;
+  margin:25px auto;
+  padding:0 15px;
 }
 
 .card{
-    background:white;
-    border-radius:18px;
-    padding:22px;
-    margin-bottom:18px;
-    box-shadow:0 5px 20px rgba(0,0,0,.08);
+  background:white;
+  border-radius:20px;
+  padding:23px;
+  margin-bottom:20px;
+  box-shadow:0 6px 22px rgba(0,0,0,.08);
 }
 
 .card h3{
-    margin-bottom:18px;
+  font-size:23px;
+  margin-bottom:18px;
 }
 
 .route{
-    display:flex;
-    gap:10px;
-    margin-bottom:18px;
+  display:flex;
+  gap:10px;
 }
 
 .route button{
-    flex:1;
-    padding:15px 8px;
-    border:2px solid #2563eb;
-    background:white;
-    color:#2563eb;
-    border-radius:12px;
-    font-weight:bold;
+  flex:1;
+  padding:16px 8px;
+  border-radius:13px;
+  border:2px solid #2563eb;
+  background:white;
+  color:#2563eb;
+  font-weight:bold;
+  font-size:15px;
 }
 
 .route button.active{
-    background:#2563eb;
-    color:white;
+  background:#2563eb;
+  color:white;
 }
 
-label{
-    display:block;
-    margin-top:13px;
-    margin-bottom:6px;
-    font-weight:bold;
-}
-
-input,select{
-    width:100%;
-    padding:13px;
-    border:1px solid #cbd5e1;
-    border-radius:10px;
-    font-size:16px;
-}
-
-.book-btn{
-    width:100%;
-    margin-top:20px;
-    padding:16px;
-    border:0;
-    border-radius:12px;
-    background:#16a34a;
-    color:white;
-    font-size:17px;
-    font-weight:bold;
+.selected{
+  margin-top:17px;
+  font-size:17px;
 }
 
 .info{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:12px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
 }
 
-.info div{
-    background:#f1f5f9;
-    padding:15px;
-    border-radius:12px;
-    text-align:center;
+.infoBox{
+  background:#eff6ff;
+  padding:16px 10px;
+  border-radius:13px;
+  text-align:center;
 }
 
-.confirmation{
-    display:none;
-    border:2px solid #16a34a;
+.infoBox strong{
+  display:block;
+  font-size:18px;
+  margin-bottom:5px;
 }
 
-.confirmation h3{
-    color:#16a34a;
+label{
+  display:block;
+  margin-top:15px;
+  margin-bottom:7px;
+  font-weight:bold;
+}
+
+input,select{
+  width:100%;
+  padding:14px;
+  border:1px solid #cbd5e1;
+  border-radius:11px;
+  font-size:16px;
+  background:white;
+}
+
+.payment{
+  display:flex;
+  gap:10px;
+  margin-top:10px;
+}
+
+.payment button{
+  flex:1;
+  padding:14px 8px;
+  border-radius:11px;
+  border:2px solid #16a34a;
+  background:white;
+  color:#15803d;
+  font-weight:bold;
+}
+
+.payment button.active{
+  background:#16a34a;
+  color:white;
+}
+
+.bookBtn{
+  width:100%;
+  margin-top:22px;
+  padding:17px;
+  border:0;
+  border-radius:13px;
+  background:#16a34a;
+  color:white;
+  font-size:18px;
+  font-weight:bold;
+}
+
+.confirm{
+  display:none;
+  border:2px solid #16a34a;
+}
+
+.confirm h3{
+  color:#15803d;
+}
+
+.bookingId{
+  background:#f0fdf4;
+  padding:15px;
+  border-radius:10px;
+  margin:15px 0;
+  text-align:center;
 }
 
 footer{
-    text-align:center;
-    padding:25px;
-    color:#64748b;
+  text-align:center;
+  padding:25px;
+  color:#64748b;
 }
 </style>
 </head>
@@ -149,189 +192,304 @@ footer{
 <body>
 
 <header>
-    <h1>🚐 Travel With Us</h1>
-    <p>Village ↔ Hyderabad Daily Travel</p>
+  <h1>🚐 Armoor ↔ Hyderabad</h1>
+  <p>Daily Pickup & Drop Service</p>
 </header>
 
 <section class="hero">
-    <h2>Book Your Seat</h2>
-    <p>Safe • Comfortable • Easy Booking</p>
+  <h2>Book Your Seat</h2>
+  <p>Safe • Comfortable • Easy Booking</p>
 </section>
 
 <div class="container">
 
+<!-- ROUTE -->
 <div class="card">
 
-<h3>Choose Your Route</h3>
+<h3>📍 Choose Your Route</h3>
 
 <div class="route">
-    <button id="villageBtn" class="active" onclick="selectRoute('Village → Hyderabad')">
-        Village → Hyderabad
-    </button>
 
-    <button id="hyderabadBtn" onclick="selectRoute('Hyderabad → Village')">
-        Hyderabad → Village
-    </button>
+<button id="armBtn"
+onclick="setRoute('Armoor → JBS')"
+class="active">
+Armoor → JBS
+</button>
+
+<button id="jbsBtn"
+onclick="setRoute('JBS → Armoor')">
+JBS → Armoor
+</button>
+
 </div>
 
-<p id="selectedRoute"><b>Selected:</b> Village → Hyderabad</p>
+<div class="selected">
+<b>Selected:</b>
+<span id="routeText">Armoor → JBS</span>
+</div>
 
 </div>
 
 
+<!-- TRIP INFORMATION -->
+<div class="card">
+
+<h3>🚌 Trip Information</h3>
+
+<div class="info">
+
+<div class="infoBox">
+<strong>7 Seats</strong>
+Vehicle Capacity
+</div>
+
+<div class="infoBox">
+<strong>₹500</strong>
+One Way Fare
+</div>
+
+<div class="infoBox">
+<strong>4:30 AM – 6 AM</strong>
+Morning Pickup
+</div>
+
+<div class="infoBox">
+<strong>12 PM – 4 PM</strong>
+Afternoon Drop
+</div>
+
+</div>
+
+</div>
+
+
+<!-- PASSENGER -->
 <div class="card">
 
 <h3>📝 Passenger Details</h3>
 
 <label>Passenger Name</label>
-<input type="text" id="name" placeholder="Enter your name">
+<input id="name" type="text" placeholder="Enter your name">
 
 <label>Mobile Number</label>
-<input type="tel" id="phone" placeholder="Enter mobile number">
+<input id="phone" type="tel" maxlength="10"
+placeholder="10 digit mobile number">
 
 <label>Journey Date</label>
-<input type="date" id="date">
+<input id="date" type="date">
 
 <label>Number of Seats</label>
+
 <select id="seats">
-    <option value="1">1 Seat</option>
-    <option value="2">2 Seats</option>
-    <option value="3">3 Seats</option>
-    <option value="4">4 Seats</option>
+<option value="1">1 Seat — ₹500</option>
+<option value="2">2 Seats — ₹1000</option>
+<option value="3">3 Seats — ₹1500</option>
+<option value="4">4 Seats — ₹2000</option>
+<option value="5">5 Seats — ₹2500</option>
+<option value="6">6 Seats — ₹3000</option>
+<option value="7">7 Seats — ₹3500</option>
 </select>
+
 
 <label>Pickup Point</label>
-<input type="text" id="pickup" placeholder="Enter pickup point">
+<input id="pickup" type="text"
+placeholder="Enter pickup point">
+
 
 <label>Drop Point</label>
-<input type="text" id="drop" placeholder="Enter drop point">
+<input id="drop" type="text"
+placeholder="Enter drop point">
 
-<label>Payment</label>
-<select id="payment">
-    <option value="offline">💵 Pay Offline</option>
-    <option value="online">💳 Pay Full Online</option>
-</select>
 
-<button class="book-btn" onclick="bookNow()">
-    Confirm Booking
+<label>Payment Method</label>
+
+<div class="payment">
+
+<button id="offlineBtn"
+class="active"
+onclick="paymentType('Offline')">
+💵 Pay Offline
+</button>
+
+<button id="onlineBtn"
+onclick="paymentType('Online')">
+💳 Pay Online
+</button>
+
+</div>
+
+<button class="bookBtn" onclick="bookNow()">
+Confirm Booking
 </button>
 
 </div>
 
 
-<div class="card confirmation" id="confirmation">
+<!-- CONFIRMATION -->
+<div class="card confirm" id="confirmation">
 
 <h3>✅ Booking Request Created</h3>
 
-<p id="bookingText"></p>
+<div class="bookingId">
+<b>Booking ID</b><br>
+<span id="bookingId"></span>
+</div>
+
+<p id="bookingDetails"></p>
 
 <br>
 
-<p><b>Booking ID:</b> <span id="bookingId"></span></p>
+<p>
+<strong>Payment:</strong>
+<span id="paymentDetails"></span>
+</p>
 
 <br>
 
-<p>Our team will contact you to confirm the booking.</p>
-
-</div>
-
-
-<div class="card">
-
-<h3>🚐 Trip Information</h3>
-
-<div class="info">
-
-<div>
-<b>Daily</b><br>
-Trips
-</div>
-
-<div>
-<b>Comfortable</b><br>
-Travel
-</div>
-
-<div>
-<b>Pickup</b><br>
-Available
-</div>
-
-<div>
-<b>Easy</b><br>
-Booking
-</div>
-
-</div>
+<p>
+Your booking request has been recorded on this device.
+</p>
 
 </div>
 
 </div>
 
 <footer>
-© 2026 Travel With Us • All Rights Reserved
+© 2026 Armoor ↔ Hyderabad Travel
 </footer>
 
 
 <script>
 
-let selectedRoute = "Village → Hyderabad";
+let selectedRoute = "Armoor → JBS";
+let selectedPayment = "Offline";
 
-function selectRoute(route){
+function setRoute(route){
 
-    selectedRoute = route;
+  selectedRoute = route;
 
-    document.getElementById("selectedRoute").innerHTML =
-        "<b>Selected:</b> " + route;
+  document.getElementById("routeText").innerText = route;
 
-    if(route === "Village → Hyderabad"){
+  if(route === "Armoor → JBS"){
 
-        document.getElementById("villageBtn").classList.add("active");
-        document.getElementById("hyderabadBtn").classList.remove("active");
+    document.getElementById("armBtn")
+    .classList.add("active");
 
-    }else{
+    document.getElementById("jbsBtn")
+    .classList.remove("active");
 
-        document.getElementById("hyderabadBtn").classList.add("active");
-        document.getElementById("villageBtn").classList.remove("active");
+  }else{
 
-    }
+    document.getElementById("jbsBtn")
+    .classList.add("active");
+
+    document.getElementById("armBtn")
+    .classList.remove("active");
+
+  }
 }
+
+
+function paymentType(type){
+
+  selectedPayment = type;
+
+  if(type === "Offline"){
+
+    document.getElementById("offlineBtn")
+    .classList.add("active");
+
+    document.getElementById("onlineBtn")
+    .classList.remove("active");
+
+  }else{
+
+    document.getElementById("onlineBtn")
+    .classList.add("active");
+
+    document.getElementById("offlineBtn")
+    .classList.remove("active");
+
+  }
+}
+
 
 function bookNow(){
 
-    let name = document.getElementById("name").value;
-    let phone = document.getElementById("phone").value;
-    let date = document.getElementById("date").value;
-    let seats = document.getElementById("seats").value;
-    let pickup = document.getElementById("pickup").value;
-    let drop = document.getElementById("drop").value;
-    let payment = document.getElementById("payment").value;
+  let name =
+  document.getElementById("name").value.trim();
 
-    if(!name || !phone || !date || !pickup || !drop){
+  let phone =
+  document.getElementById("phone").value.trim();
 
-        alert("Please fill all details.");
-        return;
+  let date =
+  document.getElementById("date").value;
 
-    }
+  let seats =
+  document.getElementById("seats").value;
 
-    let bookingId = "TWU" + Math.floor(100000 + Math.random()*900000);
+  let pickup =
+  document.getElementById("pickup").value.trim();
 
-    document.getElementById("bookingId").innerText = bookingId;
+  let drop =
+  document.getElementById("drop").value.trim();
 
-    document.getElementById("bookingText").innerHTML =
-        "Passenger: <b>" + name + "</b><br>" +
-        "Route: <b>" + selectedRoute + "</b><br>" +
-        "Date: <b>" + date + "</b><br>" +
-        "Seats: <b>" + seats + "</b><br>" +
-        "Pickup: <b>" + pickup + "</b><br>" +
-        "Drop: <b>" + drop + "</b><br>" +
-        "Payment: <b>" + payment + "</b>";
 
-    document.getElementById("confirmation").style.display = "block";
+  if(!name || !phone || !date || !pickup || !drop){
 
-    document.getElementById("confirmation").scrollIntoView({
-        behavior:"smooth"
-    });
+    alert("Please fill all details.");
+    return;
+
+  }
+
+
+  if(!/^[0-9]{10}$/.test(phone)){
+
+    alert("Please enter a valid 10 digit mobile number.");
+    return;
+
+  }
+
+
+  let total =
+  Number(seats) * 500;
+
+
+  let bookingId =
+  "ARM" +
+  Math.floor(
+    100000 + Math.random()*900000
+  );
+
+
+  document.getElementById("bookingId")
+  .innerText = bookingId;
+
+
+  document.getElementById("bookingDetails")
+  .innerHTML =
+  "<b>Passenger:</b> " + name +
+  "<br><b>Mobile:</b> " + phone +
+  "<br><b>Route:</b> " + selectedRoute +
+  "<br><b>Date:</b> " + date +
+  "<br><b>Seats:</b> " + seats +
+  "<br><b>Pickup:</b> " + pickup +
+  "<br><b>Drop:</b> " + drop +
+  "<br><b>Total Fare:</b> ₹" + total;
+
+
+  document.getElementById("paymentDetails")
+  .innerText = selectedPayment;
+
+
+  document.getElementById("confirmation")
+  .style.display = "block";
+
+
+  document.getElementById("confirmation")
+  .scrollIntoView({
+    behavior:"smooth"
+  });
 
 }
 
